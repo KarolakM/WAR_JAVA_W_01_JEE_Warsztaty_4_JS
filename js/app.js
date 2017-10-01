@@ -17,9 +17,10 @@ $(function () {
         arr.forEach(function (element, index, array) {
             var titleElement = $("<li>");
             titleElement.text(element.title);
+            titleElement.append($("<dir class=\"book details\"></div>"));
             titleElement.appendTo(booksList);
-            var dir = $("<dir>");
-            dir.appendTo(booksList)
         });
     }
+
+    
 });
